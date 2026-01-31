@@ -46,4 +46,29 @@ public:
     }
 };
 
-//ap 3
+//ap 3 -> 1 lopp
+class Solution {
+public:
+    int maxScore(string s){
+        int n = s.size();
+        
+        int ans = INT_MIN;
+        int one_total = 0, zero_left =0;
+        for(int i = 0;i<n-1;i++){
+            if(s[i] == '0'){
+                zero_left++;
+                
+            }
+            else {
+                one_total++;
+   
+            }
+            ans = max(ans,zero_left-one_total);
+        }
+        if(s[n-1] == '1') one_total++;
+
+        return ans + one_total;
+        
+    }
+};
+
