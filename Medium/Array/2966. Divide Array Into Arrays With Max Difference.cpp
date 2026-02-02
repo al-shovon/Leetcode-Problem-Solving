@@ -36,16 +36,13 @@ public:
     vector<vector<int>> divideArray(vector<int>& nums, int k) {
         sort(nums.begin(),nums.end());
         int n = nums.size();
-        int start = 0;
+        
 
         vector<vector<int>>ans;
-        for(int i = 2;i<n;i+= 3){
-            if(nums[i] - nums[i-2] > k) return ans;
-        }
 
-        for(int i = 0;i<n/3;i++){
-            ans.push_back({nums[start],nums[start+1],nums[start+2]});
-            start+=3;
+        for(int i = 0;i<n;i+= 3){
+            if(nums[i+2] - nums[i] > k) return {};
+            ans.push_back({nums[i],nums[i+1],nums[i+2]});
             
         }
 
