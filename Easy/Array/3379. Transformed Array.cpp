@@ -7,6 +7,23 @@ public:
         vector<int>ans(n,0);
 
         for(int i = 0; i<n;i++){
+            int mod = (nums[i] % n);
+            
+            int index = (i+n + mod)%n;
+            ans[i] = nums[index];
+        }
+        return ans;
+    }
+};
+
+
+class Solution {
+public:
+    vector<int> constructTransformedArray(vector<int>& nums) {
+        int n = nums.size();
+        vector<int>ans(n,0);
+
+        for(int i = 0; i<n;i++){
             int mod = nums[i]%n;
             int index = (i+mod)%n;
             if(index < 0) index+= n;
