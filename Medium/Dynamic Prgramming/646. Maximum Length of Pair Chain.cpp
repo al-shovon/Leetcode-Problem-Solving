@@ -1,6 +1,6 @@
 //646. Maximum Length of Pair Chain
 
-//app 1-> 
+//app 1-> greedy
 class Solution {
 public:
     static bool comp(const vector<int>&a,const vector<int>&b){
