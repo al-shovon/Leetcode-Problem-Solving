@@ -45,3 +45,13 @@ public:
         
     }
 };
+
+//app 4: pow(2,30) %2 == 0;
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        if(n <= 0) return 0;
+        return (1<<30) % n == 0;
+        
+    }
+};
