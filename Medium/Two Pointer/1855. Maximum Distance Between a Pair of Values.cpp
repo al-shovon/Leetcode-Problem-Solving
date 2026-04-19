@@ -19,3 +19,21 @@ public:
         return ans;
     }
 };
+
+//app2  tle
+class Solution {
+public:
+    int maxDistance(vector<int>& nums1, vector<int>& nums2) {
+        int n1 = nums1.size();
+        int n2 = nums2.size();
+
+        int ans = 0;
+
+        for(int i = 0;i<n1;i++){
+            for(int j = n2-1; j >= i && ans< j-i;j--){
+                if(nums2[j] >= nums1[i]) ans = max(ans,j-i);
+            }
+        }
+        return ans;
+    }
+};
