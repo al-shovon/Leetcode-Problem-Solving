@@ -1,5 +1,30 @@
 //1306. Jump Game III -> c++
+//app 1 -> recursion
+class Solution {
+public:
+    bool solve(vector<int>& arr, int i, vector<bool>& visited){
+        if(i >= arr.size() || i < 0 || visited[i] == 1) return false;
+        if(arr[i] == 0) return true;
 
+        visited[i] = 1;
+
+       bool right =  solve(arr,i+arr[i], visited);
+       bool left =  solve(arr,i-arr[i], visited);
+       return right || left;
+    }
+
+    bool canReach(vector<int>& arr, int start) {
+        int n = arr.size();
+        vector<bool>visited(n,0);
+
+        return solve(arr, start, visited);
+
+        
+        
+    }
+};
+
+//app 2 -> array
 class Solution {
 public:
     bool canReach(vector<int>& arr, int start) {
@@ -40,3 +65,6 @@ public:
         
     }
 };
+
+
+
