@@ -1,0 +1,19 @@
+# 2657. Find the Prefix Common Array of Two Arrays 
+class Solution:
+    def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:
+        n = len(A)
+        freq = [0]*(n+1)
+        ans = []
+        count = 0
+
+        for i in range(0,n,1):
+            freq[A[i]]+=1
+            if(freq[A[i]] == 2) : count+=1
+            freq[B[i]]+=1
+            if(freq[B[i]] == 2) : count+=1
+            ans.append(count) 
+
+
+
+        return ans
+        
