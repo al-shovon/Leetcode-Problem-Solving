@@ -5,12 +5,10 @@
 
 *A difficulty-and-topic organized archive of the problem I solve on LeetCode*
 
-
-<p align="center">
-  <img src="img/img1.jpg" alt="dashboard" width="75%"/>
-  <img src="img/img2.jpg" alt="knight badge" width="25%"/>
-</p>
-
+<div style="display: flex; justify-content: center;">
+  <img src="Image/leetcode02.png" alt="dashboard" style="width: 50%;" />
+  <img src="Image/badge.png" alt="knight badge" style="width: 50%;" />
+</div>
 
 </div>
 
