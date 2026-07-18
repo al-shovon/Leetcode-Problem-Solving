@@ -6,6 +6,12 @@
 *A difficulty-and-topic organized archive of the problem I solve on LeetCode*
 
 
+<p align="center">
+  <img src="img/img1.jpg" alt="dashboard" width="75%"/>
+  <img src="img/img2.jpg" alt="knight badge" width="25%"/>
+</p>
+
+
 </div>
 
 
