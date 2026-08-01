@@ -1,5 +1,5 @@
-# 3517. Smallest Palindromic Rearrangement I
-# app->1
+// # 3517. Smallest Palindromic Rearrangement I
+// # app->1
 class Solution {
 public:
     string smallestPalindrome(string s) {
@@ -20,7 +20,7 @@ public:
     }
 };
 
-# app->2
+// # app->2
 class Solution {
 public:
     string smallestPalindrome(string s) {
